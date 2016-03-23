@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <header class="main-header">
+<div class="content-wrapper--nav">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#" class="active">Информация</a>
+                </li>
+                <li class="main-nav__item"><a href="#">Оставить отзыв</a>
+                </li>
+                <li class="main-nav__item"><a href="#">Блог шерифа</a>
+                </li>
+                <li class="main-nav__item"><a href="#">Гостиницы</a>
+                </li>
+            </ul>
+            <div class="main-nav__logo"></div>
+        </nav>
+
+        <div class="main-nav__bottom"></div>
+
+      </div>
+
+    </header>
+
+
+    <div class="main-content">
+
+<div class="main-logo">
+
+
+        </div>
+
+        <div class="content-heading">
+<div class="content-wrapper">
+            <h2>Седона - небольшой городок в Аризоне,<br>
+      заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+</div>
+      </div>
+<div class="blue">
+      <div class="block-reason">
+
+      <div class="content-wrapper">
+                          <h2>Настоящий городок</h2>
+                          <p>-№1-</p>
+                          <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+
+      </div>
+
+</div>
+      <div class="block-reason__image"></div>
+</div>
+
+<div class="container">
+        <article class="icon">
+
+        <div class="block-icon">
+<img src="img/icon-house.svg" alt="">
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="block-icon">
+<img src="img/icon-burger.svg" alt="">
+            <h2>Еда</h2>
+            <p>Всегда заказывай фирменный бургер, вы не разочаруетесь!
+            </p>
+        </div>
+        <div class="block-icon">
+<img src="img/icon-gift.svg" alt="">
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+        </div>
+        </article>
+</div>
+
+<div class="blue">
+      <div class="block-reason__image"></div>
+      <div class="block-reason">
+
+      <div class="content-wrapper">
+                          <h2>Там есть мост дьявола!</h2>
+                          <p>-№2-</p>
+                          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+
+      </div>
+
+</div>
+
+</div>
+
+
+        <article class="block-text">
+
+            <div class="description-item">
+                <h2>Небольшая площадь</h2>
+                <p>-№3-</p>
+                <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="description-item">
+                <h2>Красивая дорога</h2>
+                <p>-№4-</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="description-item">
+                <h2>Мало туристов</h2>
+                <p>-№5-</p>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+
+        </article>
+
+<div class="hotel-search">
+
+        <div class="content-heading">
+  <div class="content-wrapper">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
+          </div>
+
+</div>
+<a href="#" class="btn">Найти гостиницу</a>
+
+</div>
+<div id="map" style="width: 100%; height: 300px"></div>
+    </div>
+
+    <footer class="main-footer">
+
+            <section class="footer-hashtag">
+                <h2>#visitsedona</h2>
+            </section>
+            <section class="footer-social">
+                <a href="#"><div class="btn-social btn-social__twitter"></div></a>
+                <a href="#"><div class="btn-social btn-social__facebook"></div></a>
+                <a href="#"><div class="btn-social btn-social__youtube"></div></a>
+            </section>
+            <section class="footer-copyright">
+                <p class="footer-copyright__text">Разработано</p>
+                <a href="#"><img src="img/htmlacademy.svg" alt="htmlacademy.ru" class="footer-copyright__image"></a>
+            </section>
+
+    </footer>
+
+</body>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript">
+  var myMap;
+  ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+  function init () {
+    myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64], // Координаты центра карты
+      zoom: 10 // Zoom
+    });
+  }
+</script>
+</html>

@@ -1,0 +1,110 @@
+.container {
+  width:880px;
+  margin: 0 auto;
+}
+.service {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    outline: 1px solid #eeeeee;
+    width: 880px;
+    bottom: -110px;
+    right: 0;
+  }
+  & .btn {
+    position: absolute;
+    top:240px;
+  }
+  & img {
+    padding-bottom: 10px;
+  }
+}
+.service-item {
+  width: 240px;
+  margin-right: 80px;
+   &:last-child {
+     margin-right: 0;
+   }
+}
+.info {
+  margin-bottom: 70px;
+  display: flex;
+}
+.customers {
+  display: flex;
+  position: relative;
+  margin-bottom: 70px;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  padding: 50px 0;
+  align-items: center;
+}
+.customer-logo {
+  margin-right: 100px;
+   &:last-child {
+     margin-right: 0;
+   }
+ }
+.promo-block {
+  width:380px;
+  margin-right: 160px;
+}
+.left-column {
+  margin-right: 80px;
+  width: 560px;
+}
+.right-column {
+  width: 230px;
+}
+.btn {
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+.btn--red {
+  background-color: @red-color;
+  padding: 10px 35px;
+  &:hover {
+    background-color: @red-color-hover;
+  }
+  &:active {
+    background-color: @red-color-active;
+  }
+}
+.btn--green {
+  background-color: @green-color;
+  padding: 10px 35px;
+  &:hover {
+    background-color: @green-color-hover;
+  }
+  &:active {
+    background-color: @green-color-active;
+  }
+}
+.btn--yellow {
+  background-color: @yellow-color;
+  padding: 10px 35px;
+  &:hover {
+    background-color: @yellow-color-hover;
+  }
+  &:active {
+    background-color: @yellow-color-active;
+  }
+}
+
+.content-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+.content-logo {
+  margin-bottom: 90px;
+}

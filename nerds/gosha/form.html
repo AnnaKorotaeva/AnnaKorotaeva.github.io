@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sedona</title>
+</head>
+
+<body>
+   <div class="container">
+    <header class="main-header">
+      <div class="container clearfix">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#">Информация</a>
+                </li>
+                <li class="main-nav__item"><a href="#">Оставить отзыв</a>
+                </li>
+                <li class="main-nav__item"><a href="#">Блог шерифа</a>
+                </li>
+                <li class="main-nav__item"><a href="#">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="main-nav--closed"></nav>
+      </div>
+    </header>
+    </div>
+
+    <div class="main-container">
+        <div class="main-logo">
+            <img src="img/main_logo_form_mob.jpg" alt="Sedona" class="main-logo__image">
+        </div>
+        <div class="content-heading clearfix">
+            <h2 class="content-heading__title">Оставьте свой отзыв</h2>
+            <p class="content-heading__text">Помогите нашим отелям стать
+            лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+
+        <div class="form">
+          <form action="/echo" class="feedback" enctype="multipart/form-data">
+            <fieldset>
+            <h2 class="content-heading__title">Представьтесь, пожалуйста:</h2>
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="user_surname" class="feedback__input"
+            placeholder="Иванов">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="user_name" class="feedback__input"
+            placeholder="Петр">
+            <label for="partonymic">Отчество:</label>
+            <input type="text" id="partonymic" name="patronymic" class="feedback__input"
+            placeholder="Александрович">
+            </fieldset>
+
+            <fieldset>
+            <h2 class="content-heading__title">Ваше общее впечатление:</h2>
+            <input type="radio" id="positive" name="positive" class="feedback__input"
+            checked>
+            <label for="positive">Скорее положительное</label>
+            <input type="radio" id="negative" name="negative" class="feedback__input">
+            <label for="negative">Скорее отрицательное</label>
+
+            </fieldset>
+
+            <fieldset>
+            <h2 class="content-heading__title">Даты вашей поездки:</h2>
+            <label for="checkin_date">Дата приезда:</label>
+            <input type="date" id="checkin_date" name="arrival_date" class="feedback__input">
+            <label for="dayscount">Длительность пребывания:</label>
+            <input type="number" id="dayscount" name="dayscount" class="feedback__input">
+            <label for="checkout_date">Дата отъезда:</label>
+            <input type="date" id="checkout_date" name="leave_date" class="feedback__input">
+            </fieldset>
+
+            <fieldset>
+            <h2 class="content-heading__title">Кол-во путешественников:</h2>
+            <label for="personcount">Количество путешественников:</label>
+            <input type="number" id="personcount" class="feedback__input"
+            name="personcount">
+
+            <label for="">Фамилия</label>
+            <input type="text" id="" class="feedback__input" placeholder="Иванов">
+            <label for="">Имя</label>
+            <input type="text" id="" class="feedback__input" placeholder="Петр">
+            <label for="">Отчество</label>
+            <input type="text" id="" class="feedback__input" placeholder="Александрович">
+
+            </fieldset>
+
+            <fieldset>
+            <h2 class="content-heading__title">Посещенные достопримечательности:</h2>
+            <input type="checkbox" id="" class="feedback__input" checked>
+            <label for="">Мост Дьявола</label>
+            <input type="checkbox" id="" class="feedback__input">
+            <label for="">Слайд-парк</label>
+            <input type="checkbox" id="" class="feedback__input" checked>
+            <label for="">Гора-Колокол</label>
+            <input type="checkbox" id="" class="feedback__input" checked>
+            <label for="">Красные скалы</label>
+
+            <h2 class="content-heading__title">Загрузите фотографии:</h2>
+            <label for="photo"></label>
+            <input type="file" id="photo" name="photo" class="feedback__input"
+             value="Выбрать фотографии">
+            </fieldset>
+            <input type="submit" name="" value="Отправить отзыв">
+          </form>
+        </div>
+
+
+
+        </div>
+
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <section class="footer-hashtag">
+                <h2 class="footer-hashtag__title">#visitsedona</h2>
+            </section>
+            <section class="footer-social">
+                <div class="twitter-btn"></div>
+                <div class="facebook-btn"></div>
+                <div class="youtube-btn"></div>
+            </section>
+            <section class="footer-copyright">
+                <p class="footer-copyright__text">Разработано</p>
+                <img src="img/logo_copyright_mob.png" alt="htmlacademy.ru" class="footer-copyright__image">
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

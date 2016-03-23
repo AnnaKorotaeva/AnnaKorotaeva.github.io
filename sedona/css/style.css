@@ -1,0 +1,181 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-width: 500px;
+  max-width: 1600px;
+}
+h2 {
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+fieldset {
+  border: none;
+}
+.main-nav ul {
+  padding: 0 5%;
+  margin: 0;
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.main-nav ul::before {
+  position: absolute;
+  width: 137px;
+  height: 72px;
+  content: '';
+  top: 0;
+  left: 45%;
+  background: url("../img/logo-sedona@1x.png") no-repeat center, url("../img/form-logo-triangle.svg") no-repeat center;
+}
+.main-nav__list li {
+  font-weight: bold;
+  padding: 18px 3%;
+}
+.main-nav__list li:nth-child(2) {
+  padding-right: 25%;
+}
+.main-nav__list a {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+.main-nav__list a:hover {
+  color: #81b3d2;
+}
+.main-nav__list .active {
+  color: #766357;
+}
+.main-nav__list .active:hover {
+  color: #604e43;
+}
+.block-reason {
+  background-color: #81b3d2;
+}
+/*треугольник
+.content-heading {
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+    content: '';
+    position: absolute;
+    }  */
+.blog-item__date {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.blog-item__date p {
+  padding-left: 26px;
+  font-style: italic;
+  color: #999999;
+}
+.page-nav {
+  display: flex;
+}
+.main-logo {
+  background: url("../img/text-welcome.svg") no-repeat center 50px, url("../img/text-tothegorgeous.svg") no-repeat center 100px, url("../img/text-sedona.svg") no-repeat center, url("../img/text-becausecanyon.svg") no-repeat center 280px, url("../img/photo-background@2x.jpg") no-repeat 50% 30%;
+  height: 410px;
+}
+.map {
+  width: 100%;
+  height: 350px;
+}
+.blue {
+  display: flex;
+  color: #ffffff;
+  height: 255px;
+}
+.block-reason {
+  width: 35%;
+}
+.icon,
+.block-reason {
+  display: flex;
+}
+.block-icon,
+.description-item {
+  padding: 3%;
+  width: 30%;
+}
+.content-wrapper {
+  padding: 30px 5%;
+}
+.block-text {
+  background-color: #eeeeee;
+  display: flex;
+  height: 255px;
+}
+.block-reason__image {
+  background: url("../img/photo-bridge@2x.jpg") no-repeat 50% 30%;
+  width: 65%;
+}
+.block-reason__image:last-child {
+  background: url("../img/photo-city@2x.jpg") no-repeat 50% 35%;
+}
+.btn-social {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+  margin-bottom: 40px;
+  width: 45px;
+  height: 45px;
+}
+.btn-social__twitter {
+  background: #81b3d2 url("../img/icon-twitter.svg") no-repeat center;
+}
+.btn-social__facebook {
+  background: #81b3d2 url("../img/icon-facebook.svg") no-repeat center;
+}
+.btn-social__youtube {
+  background: #81b3d2 url("../img/icon-youtube.svg") no-repeat center;
+}
+.btn-social:hover {
+  background-color: #669ec0;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 15px;
+  color: #fff;
+  background-color: #81b3d2;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 60%;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.btn:hover {
+  background-color: #669ec0;
+}
+.footer-copyright__text {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+.footer-copyright a:hover {
+  background: url("..img/logo_hvr.png");
+}
+.footer-hashtag {
+  margin-bottom: 40px;
+}
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 35px;
+}
